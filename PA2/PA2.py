@@ -3,7 +3,7 @@
 
 # # Nima Aghli 
 
-# In[175]:
+# In[1]:
 
 get_ipython().magic('matplotlib inline')
 from pylab import *
@@ -18,8 +18,9 @@ import pandas as pd
 
 # ## Figure 3.4.b
 
-# In[176]:
+# In[2]:
 
+######### Figure 3.4.b#########
 img=mpimg.imread('Fig0304(a).tif')
 img_p = cv2.imread('Fig0304(a).tif')
 img_negative=255-img_p#substract the max intensity value from each pixel to reverse values 
@@ -33,19 +34,19 @@ figure()
 plt.imshow(img_negative)
 title('Negative Image')
 show()
-
+########## END Figure 3.4.b#########
 
 
 
 # ## Figure 3.16
 
-# In[177]:
+# In[3]:
 
+######### Figure 3.16 #########
 img_1 = cv2.imread('Fig0316(1).tif')
 img_2 = cv2.imread('Fig0316(2).tif')
 img_3 = cv2.imread('Fig0316(3).tif')
 img_4 = cv2.imread('Fig0316(4).tif')
-
 
 
 nrows = 4
@@ -70,13 +71,14 @@ ax = fig.add_subplot(nrows, ncols, 7)
 ax.imshow(img_3)
 ax = fig.add_subplot(nrows, ncols, 8)
 ax.hist(img_3.ravel(),256,[0,256]); 
+######### END Figure 3.16 #########
 
 
 # ## Figure 3.20 (Histogram Equalizetion)
 
-# In[178]:
+# In[4]:
 
-## Histogram Equalizetion Example 
+## Figure 3.20 Histogram Equalizetion Example ##
 img_1 = cv2.imread('Fig0316(1).tif',0)
 img_2 = cv2.imread('Fig0316(2).tif',0)
 img_3 = cv2.imread('Fig0316(3).tif',0)
@@ -122,13 +124,14 @@ ax = fig.add_subplot(nrows, ncols, 8)
 ax.imshow(equ_3,cmap = plt.get_cmap('gray'), vmin = 0, vmax = 255)
 ax = fig.add_subplot(nrows, ncols, 9)
 ax.hist(equ_3.ravel(),256,[0,256]); 
+#### End Figure 3.20 Histogram Equalizetion Example ####
 
 
 # ## Figure 3.35(Median And Averaging Special filter With OpenCV)
 
-# In[179]:
+# In[5]:
 
-#median special filter averaging special filter using opencv 
+# Figure 3.35 median special filter averaging special filter using opencv## 
 img_5 = cv2.imread('Fig0335(a).tif')
 
 blur_5 = cv2.blur(img_5,(3,3))
@@ -143,12 +146,14 @@ ax = fig.add_subplot(nrows, ncols, 2)
 ax.imshow(blur_5)
 ax = fig.add_subplot(nrows, ncols, 3)
 ax.imshow(median_5)
+#######End Figure 3.35###############
 
 
 # ## Figure 3.35(Median Special Filter Implementation)
 
-# In[180]:
+# In[6]:
 
+################Figure 3.35#############
 #Implementation of Median_filter
 #pseudo code from https://en.wikipedia.org/wiki/Median_filter
 source = cv2.imread('Fig0335(a).tif', 0)
@@ -176,11 +181,14 @@ for y in range(edgex,width-edgex):
 
 ax = fig.add_subplot(nrows, ncols, 2)
 ax.imshow(final,cmap = plt.get_cmap('gray'), vmin = 0, vmax = 255)
+################End Figure 3.35#############
 
 
 # ## Figure 3.35(Averaging Special Filter Implementation)
 
-# In[181]:
+# In[7]:
+
+################Figure 3.35#############
 
 #Implementation of averaging special filter
 
@@ -212,11 +220,12 @@ for y in range(edgex,width-edgex):
 #plot the results 
 ax = fig.add_subplot(nrows, ncols, 2)
 ax.imshow(final,cmap = plt.get_cmap('gray'), vmin = 0, vmax = 255)
+################End Figure 3.35#############
 
 
 # ## Figure 3.43(Laplacian And Sobel Of Image)
 
-# In[182]:
+# In[8]:
 
 #Laplacian and Sobel Filter Example 
 #Sobel Filter Config Learned From :

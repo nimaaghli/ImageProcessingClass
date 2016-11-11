@@ -1,0 +1,40 @@
+Tracks are being computed...
+Compute optical flow. Frame0
+Compute optical flow. Frame1
+Compute optical flow. Frame2
+Compute optical flow. Frame3
+Compute optical flow. Frame4
+Compute optical flow. Frame5
+Compute optical flow. Frame6
+Compute optical flow. Frame7
+Compute optical flow. Frame8
+Compute optical flow. Frame9
+Compute optical flow. Frame10
+Compute optical flow. Frame11
+Compute optical flow. Frame12
+Compute optical flow. Frame13
+Compute optical flow. Frame14
+Compute optical flow. Frame15
+Compute optical flow. Frame16
+Compute optical flow. Frame17
+Compute optical flow. Frame18
+Compute optical flow. Frame19
+Compute optical flow. Frame20
+Compute optical flow. Frame21
+Compute optical flow. Frame22
+Compute optical flow. Frame23
+Compute optical flow. Frame24
+Compute optical flow. Frame25
+Compute optical flow. Frame26
+Compute optical flow. Frame27
+Compute optical flow. Frame28
+Before N-Cut.
+After N-Cut.
+Before segmentation.
+After segmentation.
+Merging...
+Merging 0 and 6: 0.49984
+Merging 0 and 5: 0.87619
+Merging 2 and 4: 1.63612
+Merging 0 and 3: 1.98468
+Computation time: 4341.12 seconds
