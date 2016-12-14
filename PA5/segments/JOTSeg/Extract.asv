@@ -1,0 +1,7 @@
+clear
+
+for n = 1:21
+    K = mat2gray(segmentation{n,1});
+    baseFileName = sprintf('Image0%d.png', n);
+    imwrite(K,baseFileName);
+end

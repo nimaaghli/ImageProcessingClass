@@ -1,0 +1,5 @@
+
+for n = 1:21
+    K = mat2gray(segmentation{n,1});
+    imwrite(A,'Image'+n);
+end
